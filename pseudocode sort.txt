@@ -1,0 +1,58 @@
+SELECTION SORT
+deklarasi
+	i,j,temp,index,n : int
+	array : int[]
+endDeklarasi
+algoritma
+	for (i:=0 to i:=n-2) do
+		index :=i
+		for (j:=i+1 to j:=n-1) do
+			if (a[index] < a[j]) then
+				index=j
+			endIf
+		endFor
+		if (index != i) then
+			temp=array[i]
+			array[i]=array[index]
+			array[index]=temp
+		endIf
+	endFor
+endAlgoritma
+
+INSERTION SORT
+deklarasi
+	i,j,temp ,n : int
+	array : int[]
+endDeklarasi
+algoritma
+	for (i:=1 to i:=n) do
+		for (j:=i to j>0 and array[j-1]<array[j]) do
+			temp=array[j-1]
+			array[j-1]=array[j]
+			array[j]=temp
+		endFor
+	endFor	
+endAlgoritma
+
+BUBBLE SORT
+deklarasi
+	i,j,temp ,n : int
+	array : int[]
+endDeklarasi
+algoritma
+	for(i:=0 to i:=n-2) do
+		for (j:=0 to j:=n-i-2) do
+			if (array[j]<array[j+1]) then
+				temp=array[j]
+				array[j]=array[j-1]
+				array[j-1]=temp
+			endIf
+		endFor
+	endFor
+endAlgoritma
+
+
+
+	
+
+
